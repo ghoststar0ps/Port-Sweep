@@ -1,0 +1,8 @@
+Options +FollowSymLinks -MultiViews
+RewriteEngine on
+RewriteBase /
+
+RewriteRule ^contact/?$ contact.php [NC,L]
+
+RewriteRule ^page/(.*)/$ page.php?permalink=$1 [L]
+
